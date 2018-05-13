@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="myApp" >
   <head>
-    <title>MTG</title>
+    <title>Alec Wilbur</title>
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" charset="utf-8"></script>
     <script src="js/app.js"></script>
@@ -16,12 +16,26 @@
                 <h3>Web Developer</h3>
             </div>
             <div>
+                <p> Welcome! As you my have read above my name is Alec Wilbur, and I am a Maryland based web Developer. I work mainly with Javascript, CSS, HTML, and have experience with Ruby, SQL, MongoDB, Node.js and frameworks like Rails, Express, ect.</p>
+                <p>Feel free to check out my projects below and reachout to me with any questions. I'm always looking to meet new people!</p>
+            </div>
+            <div>
                 <nav>
-                    <a href="#">Linkedin</a>
-                    <a href="#">Github</a>
-                    <a href="#">Email</a>
+                    <a href="https://www.linkedin.com/in/alec-wilbur/">Linkedin</a>
+                    <a href="https://github.com/lawilbur">Github</a>
+                    <a href="lawilbur2@gmail.com">Email</a>
                 </nav>
-        </div>
+            </div>
+            <div>
+                <nav>
+                    <a ng-click="this.changeInclude('about')" href="#">About</a>
+                    <a ng-click="this.changeInclude('about')" href="#">Projects</a>
+                    <a ng-click="this.changeInclude('about')" href="#">Resume</a>
+                    <a ng-click="this.changeInclude('about')" href="#">Contact</a>
+                </nav>
+            </div>
+            <div ng-include="ctrl.includePath">
+            </div>
 
     	</div>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
