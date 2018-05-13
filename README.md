@@ -1,2 +1,2 @@
 # profile
-live link: lawilbur.github.io
+live link: http://lawilbur.github.io
