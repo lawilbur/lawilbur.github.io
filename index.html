@@ -28,10 +28,10 @@
             </div>
             <div>
                 <nav>
-                    <a ng-click="this.changeInclude('about')" href="#">About</a>
-                    <a ng-click="this.changeInclude('projects')" href="#">Projects</a>
-                    <a ng-click="this.changeInclude('resume')" href="#">Resume</a>
-                    <a ng-click="this.changeInclude('contact')" href="#">Contact</a>
+                    <a ng-click="ctrl.changeInclude('about')" href="#">About</a>
+                    <a ng-click="ctrl.changeInclude('projects')" href="#">Projects</a>
+                    <a ng-click="ctrl.changeInclude('resume')" href="#">Resume</a>
+                    <a ng-click="ctrl.changeInclude('contact')" href="#">Contact</a>
                 </nav>
             </div>
             <div ng-include="ctrl.includePath">
